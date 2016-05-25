@@ -8,7 +8,7 @@ angular.module('app', [])
   		method: 'GET',
   		url: 'https://api.cfp.io/api/users/me'
 	  }).then(function successCallback(response) {
-    	app.user = response;
+    	app.user = response.data;
     	console.log(app.user)
   	});
 
